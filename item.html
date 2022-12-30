@@ -7,76 +7,83 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <fieldset>
-            <h1 id="title">hotelbooking.com</h1>
-            <p id="description">Get your best accomodation for your next trip! :)</p>
-        </fieldset>
-        <form id="survey-form">
-            <fieldset> 
-                What city do you want to visit?
-                <select id="dropdown" name="destination">
-                    <option value="">(select one option)</option>
-                    <option value="1">Nordfriesland</option>
-                    <option value="2">Flensburg</option>
-                    <option value="3">Dithmarschen</option>
-                    <option value="4">Rendsburg-Eckernförde</option>
-                    <option value="5">Ostholstein</option>
-                    <option value="6">Lübeck</option>
-                    <option value="7">Kiel</option>
-                </select>
-            </fieldset>
-
+        <main>
             <fieldset>
-                How many nights do you plan to stay? 
-                <h6>| minimum duration of stay: 3 nights <br>| maximum duration of stay: 21 nights</h6>
-                <label for="nights"><input id="number" type="number" name="nights" min="3" max="21" placeholder="nights to stay in."/></label>  
+                <h1 id="title">hotelbooking.com</h1>
+                <p id="description">Get your best accomodation for your next trip! :)</p>
             </fieldset>
+            <form id="survey-form">
+                <fieldset> 
+                    What city do you want to visit?
+                    <select id="dropdown" name="destination">
+                        <option value="">(select one option)</option>
+                        <option value="1">Nordfriesland</option>
+                        <option value="2">Flensburg</option>
+                        <option value="3">Dithmarschen</option>
+                        <option value="4">Rendsburg-Eckernförde</option>
+                        <option value="5">Ostholstein</option>
+                        <option value="6">Lübeck</option>
+                        <option value="7">Kiel</option>
+                    </select>
+                </fieldset>
 
-            <fieldset> 
-                How many people are travelling?  
-                <h6>| minimum: 1, maximum: 5</h6>
-                <select id="dropdown" name="people">
-                    <option value="">(select one option)</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            
-            </fieldset>
-            
-            <fieldset>
-                Are you traveling for business or for pleasure? 
-                <label for="firstbutton"><input id="firstbutton" type="radio" name="buttons" value="1"/> business</label>
-                <label for="secondbutton"><input id="secondbutton" type="radio" name="buttons" value="2"/> pleasure</label>
-            </fieldset>
+                <fieldset>
+                    How many nights do you plan to stay? 
+                    <h6>| minimum duration of stay: 3 nights <br>| maximum duration of stay: 21 nights</h6>
+                    <label for="nights"><input id="number" type="number" name="nights" min="3" max="21" placeholder="nights to stay in."/></label>  
+                </fieldset>
 
-            <fieldset>
-                What recreational activities must be available?
-                <h6>| Check all that apply.</h6>
-                <label> <input type="checkbox" value="1"/> Wellness (e.g. Massage/Sauna)</label>
-                <label> <input type="checkbox" value="2"/> Fitness</label>
-                <label> <input type="checkbox" value="3"/> Club/DJ</label>
-                <label> <input type="checkbox" value="4"/> Outdoor activities (e.g. Riding/Cycling)</label>
-            </fieldset>
+                <fieldset> 
+                    How many people are travelling?  
+                    <h6>| minimum: 1, maximum: 5</h6>
+                    <select id="dropdown" name="people">
+                        <option value="">(select one option)</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                
+                </fieldset>
+                
+                <fieldset>
+                    Are you traveling for business or for pleasure? 
+                    <label for="firstbutton"><input id="firstbutton" type="radio" name="buttons" value="1"/> business</label>
+                    <label for="secondbutton"><input id="secondbutton" type="radio" name="buttons" value="2"/> pleasure</label>
+                </fieldset>
 
-            <fieldset>
-                <label for="comments">Is there anything that needs to be considered for your arrival?
-                    <h6>(optional)</h6> 
-                    <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Insert your comments here..."></textarea>
-                </label>
-            </fieldset>
+                <fieldset>
+                    What recreational activities must be available?
+                    <h6>| Check all that apply.</h6>
+                    <label> <input type="checkbox" value="1"/> Wellness (e.g. Massage/Sauna)</label>
+                    <label> <input type="checkbox" value="2"/> Fitness</label>
+                    <label> <input type="checkbox" value="3"/> Club/DJ</label>
+                    <label> <input type="checkbox" value="4"/> Outdoor activities (e.g. Riding/Cycling)</label>
+                </fieldset>
 
-            <fieldset>
-                <label for="name-label" id="name-label">What's your name? <input id="name" type="text" placeholder="Max Mustermann" required /> </label>
-                <label for="email-label" id="email-label">What's your emailadress? <input id="email" type="email" placeholder="maxmustermann@example.com" required/></label>
-                <label for="number-label" id="number-label">What's your phonenumber? <input id="number" type="number" name="phone" placeholder="Insert phonenumber here." class="inline"/> </label>
-            </fieldset> 
+                <fieldset>
+                    <label for="comments">Is there anything that needs to be considered for your arrival?
+                        <h6>(optional)</h6> 
+                        <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Insert your comments here..."></textarea>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="name-label" id="name-label">What's your name? <input id="name" type="text" placeholder="Max Mustermann" required /> </label>
+                    <label for="email-label" id="email-label">What's your emailadress? <input id="email" type="email" placeholder="maxmustermann@example.com" required/></label>
+                    <label for="number-label" id="number-label">What's your phonenumber? <input id="number" type="number" name="phone" placeholder="Insert phonenumber here." class="inline"/> </label>
+                </fieldset> 
 
 
-                <p>Thank you for requesting.<br>We are looking forward to see you soon! :)</p>
-                <input type="submit" id="submit" value="Submit"/>
-        </form>
+                    <p>Thank you for requesting.<br>We are looking forward to see you soon! :)</p>
+                    <input type="submit" id="submit" value="Submit"/>
+            </form>
+        </main>
+        
+        <footer>
+            <p class="addinfo">Created by Josepha Scharnetzki</p>
+        </footer>
+
     </body>
 </html>

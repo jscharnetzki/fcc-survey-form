@@ -34,7 +34,7 @@ form {
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
-    padding-bottom: 2em;
+    padding-bottom: 5px;
 }
   
 fieldset {
@@ -84,4 +84,10 @@ input[type="email"] {
     margin: 10px 0 0 0;
     width:100%;
     min-height: 2em;
+}
+
+footer > .addinfo {
+    font-style: normal;
+    font-size: 10pt;
+    padding-bottom: 10px;
 }
